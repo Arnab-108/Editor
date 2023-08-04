@@ -10,7 +10,7 @@ const [language, setLanguage] = useState('');
 
 const handleConvert = async () => {
   try {
-    const response = await fetch('http://localhost:8080/convert', {
+    const response = await fetch('https://editor-aidj.onrender.com/convert', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -27,7 +27,7 @@ const handleConvert = async () => {
 
 const handleDebug= async()=>{
   try {
-    const response = await fetch('http://localhost:8080/debug', {
+    const response = await fetch('https://editor-aidj.onrender.com/debug', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -44,7 +44,7 @@ const handleDebug= async()=>{
 
 const handleQuality = async()=>{
   try {
-    const response = await fetch('http://localhost:8080/quality', {
+    const response = await fetch('https://editor-aidj.onrender.com/quality', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
